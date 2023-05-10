@@ -1,22 +1,14 @@
-def add(a: float, b: float) -> float:
-    """Dodaje dwie liczby"""
+def add(a, b):
     return a + b
 
-
-def subtract(x: float, y: float) -> float:
-    """Odejmuje drugą liczbę od pierwszej"""
+def subtract(x, y):
     return x - y
 
-
-def multiply(x: float, y: float) -> float:
-    """Mnoży dwie liczby"""
+def multiply(x, y):
     return x * y
 
-
-def divide(x: float, y: float) -> float:
-    """Dzieli pierwszą liczbę przez drugą"""
+def divide(x, y):
     return x / y
-
 
 while True:
     operation = input("Wybierz operację (+, -, *, /) lub wpisz 'a', aby zakończyć: ")
@@ -36,4 +28,3 @@ while True:
     elif operation == "/":
         result = divide(num1, num2)
     print(f"Wynik: {result}")
-
