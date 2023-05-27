@@ -8,6 +8,9 @@ def multiply(x, y):
     return x * y
 
 def divide(x, y):
+    if y == 0:
+        print("Błąd: Nie można dzielić przez zero!")
+        return None
     return x / y
 
 while True:
@@ -27,4 +30,5 @@ while True:
         result = multiply(num1, num2)
     elif operation == "/":
         result = divide(num1, num2)
-    print(f"Wynik: {result}")
+    if result is not None:
+        print(f"Wynik: {result}")
