@@ -1,23 +1,4 @@
-def add(a, b):
-    """Dodaje dwie liczby"""
-    return a + b
-
-
-def subtract(x, y):
-    """Odejmuje drugą liczbę od pierwszej"""
-    return x - y
-
-
-def multiply(x, y):
-    """Mnoży dwie liczby"""
-    return x * y
-
-
-def divide(x, y):
-    """Dzieli pierwszą liczbę przez drugą"""
-    return x / y
-
-
+from main1 import *
 while True:
     operation = input("Wybierz operację (+, -, *, /) lub wpisz 'a', aby zakończyć: ")
     if operation == "a":
